@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <script src="https://kit.fontawesome.com/433ce57c72.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header-container">
+        <div class="header">
+            <nav class="header-right">
+                <a class="header-links" href="index.html"><img src="img/logo.svg" alt=""></a>
+                <a class="header-links" href="#"><img src="img/search-ic.svg" alt=""></a>
+            </nav>
+            <nav class="header-left">
+                <a class="header-links" href="#"><img src="img/menu-ic.svg" alt=""></a>
+                <a class="header-links" href="#"><img src="img/account-ic.svg" alt=""></a>
+                <a href="#" class="wrapper-basket"> 
+                     <div class="basket">
+                             <img src="img/basket-ic.svg" alt=""> 
+                         <div class="null">
+                            <span>0</span>
+                         </div>
+                     </div>
+                </a>
+            </nav>
+        </div>
+    </div>
+    <div class="section">
+        <h3 class="section-heading">SHOPPING CART</h3>
+        <div></div>
+    </div>
+    <div class="shopping-cart">
+        <div class="shopping-cart__product-wrapper">
+            <div class="shopping-cart__product-item">
+                <img src="img/shopping-item-1.jpg" alt="">
+                <div class="product-discription">
+                    <div class="product-discription__top">
+                        <p class="product-discription__heading">MANGO  PEOPLE  T-SHIRT</p> 
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <div class="product-discription__information">
+                        <div class="product-discription__text">
+                            <p class="product-discription__param">Price: </p>
+                            <p class="product-discription__value product-discription__value_price">$300</p>
+                        </div>
+                        <div class="product-discription__text">
+                            <p class="product-discription__param">Color: </p>
+                            <p class="product-discription__value">Red</p>
+                        </div>
+                        <div class="product-discription__text">
+                            <p class="product-discription__param">Size: </p>
+                            <p class="product-discription__value">XL</p>
+                        </div>
+                        <div class="product-discription__text">
+                            <p class="product-discription__param">Quantity: </p>
+
+                            <div class="product-discription__value_quantity"> 2 </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shopping-cart__product-item">
+                <img src="img/shopping-item-2.jpg" alt="">
+                <div class="product-discription">
+                    <div class="product-discription__top">
+                        <p class="product-discription__heading">MANGO  PEOPLE  T-SHIRT</p> 
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <div class="product-discription__information">
+                        <div class="product-discription__text">
+                            <p class="product-discription__param">Price: </p>
+                            <p class="product-discription__value product-discription__value_price">$300</p>
+                        </div>
+                        <div class="product-discription__text">
+                            <p class="product-discription__param">Color: </p>
+                            <p class="product-discription__value">Red</p>
+                        </div>
+                        <div class="product-discription__text">
+                            <p class="product-discription__param">Size: </p>
+                            <p class="product-discription__value">XL</p>
+                        </div>
+                        <div class="product-discription__text">
+                            <p class="product-discription__param">Quantity: </p>
+                            <div class="product-discription__value_quantity"> 2 </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shopping-cart__button-wrapper">
+                <a href="#" class="button shopping-cart__button">
+                    <p class="shopping-cart__button-text">CLEAR SHOPPING CART</p>
+                </a>
+                <a href="catalog.html" class="button shopping-cart__button">
+                    <p class="shopping-cart__button-text">CONTINUE SHOPPING</p>
+                </a>
+            </div>
+        </div>
+        <div class="shopping-cart__shipping">
+            <form class="shipping-form" action="#">
+                <p class="shipping-form__text">SHIPPING ADRESS</p>
+                <input list="country" id="country-shipping" name="country-shipping" placeholder="Country" class="shipping-form__input"/>
+                <datalist id="country">
+                    <option value="Australia">
+                    <option value="USA">
+                    <option value="Russia">
+                    <option value="Germany">
+                    <option value="Mexico">
+                    <option value="Ukraine">
+                </datalist>
+                <input list="state" id="state-shipping" name="state-shipping" placeholder="State" class="shipping-form__input"/>
+                <datalist id="state">
+                    <option value="State 1">
+                    <option value="State 2">
+                    <option value="State 3">
+                </datalist>
+                <input type="text" placeholder="Postcode / Zip" class="shipping-form__input">
+                <button type="submit" class="shipping-form__button">GET A QUOTE</button>
+            </form>
+            <div class="checkout-form">
+                <div class="checkout-form__sub-total">
+                    <p class="checkout-form__sub-total_text">SUB TOTAL</p>
+                    <p class="checkout-form__sub-total_price">$900</p>
+                </div>
+                <div class="checkout-form__grand-total">
+                    <p class="checkout-form__grand-total_text">GRAND TOTAL</p>
+                    <p class="checkout-form__grand-total_price">$900</p>
+                </div>
+                <hr class="checkout-form__hr">
+                <button class="checkout-form__button">PROCEED TO CHECKOUT</button>
+            </div>
+        </div>
+    </div>
+    <div class="reviews">
+        <figure class="comments">
+            <img src="img/review-ic.png" alt="">
+            <p class="comm-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
+        </figure >
+        <div class="subscribe">
+            <p class="subscribe-text"> <span class="subscribe-heading">SUBSCRIBE</span> <br>
+             FOR OUR NEWLETTER AND PROMOTION</p>
+             <form action="#" class="subscribe-button">
+                 <input class="subscribe-button-in" type="email" placeholder="Enter Your Email">
+                 <button class="subscribe-submit" type="submit">Subscribe</button>
+             </form>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="footer-text">© 2021  Brand  All Rights Reserved.</p>
+         <nav class="footer-ic-wrapper">
+             <a class="footer-ic" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a class="footer-ic" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a class="footer-ic" href="https://www.pinterest.com/" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+              <a class="footer-ic" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+         </nav>
+    </div>
+</body>
+</html>

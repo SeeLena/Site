@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,9 +17,33 @@
                 <a class="header-links" href="#"><img src="img/search-ic.svg" alt=""></a>
             </nav>
             <nav class="header-left">
-                <a class="header-links" href="#"><img src="img/menu-ic.svg" alt=""></a>
+                <div class="header-links-menu">
+                    <a class="header-links" href="#"><img src="img/menu-ic.svg" alt=""></a>
+                    <nav class="header-menu">
+                        <i class="fas fa-times header-menu__cross"></i>
+                        <p class="header-menu__heading">MENU</p>
+                        <p class="header-menu__links-heading">MAN</p>
+                            <a href="catalog.html" class="header-menu__links">Accessories</a>
+                            <a href="catalog.html" class="header-menu__links">Bags</a>
+                            <a href="catalog.html" class="header-menu__links">Denim</a>
+                            <a href="catalog.html" class="header-menu__links">T-Shirts</a>
+                        <p class="header-menu__links-heading">WOMAN</p>
+                            <a href="catalog.html" class="header-menu__links">Accessories</a>
+                            <a href="catalog.html" class="header-menu__links">Jackets & Coats</a>
+                            <a href="catalog.html" class="header-menu__links">Polos</a>
+                            <a href="catalog.html" class="header-menu__links">T-Shirts</a>
+                            <a href="catalog.html" class="header-menu__links">Shirts</a>
+                        <p class="header-menu__links-heading">KIDS</p>
+                            <a href="catalog.html" class="header-menu__links">Accessories</a>
+                            <a href="catalog.html" class="header-menu__links">Jackets & Coats</a>
+                            <a href="catalog.html" class="header-menu__links">Polos</a>
+                            <a href="catalog.html" class="header-menu__links">T-Shirts</a>
+                            <a href="catalog.html" class="header-menu__links">Shirts</a>
+                            <a href="catalog.html" class="header-menu__links">Bags</a>
+                    </nav>
+                </div>
                 <a class="header-links" href="#"><img src="img/account-ic.svg" alt=""></a>
-                <a href="#" class="wrapper-basket">
+                <a href="cart.html" class="wrapper-basket">
                     <div class="basket">
                         <img src="img/basket-ic.svg" alt="">
                         <div class="null">
@@ -34,14 +57,13 @@
     <div class="section">
         <h3 class="section-heading">NEW ARRIVALS </h3>
         <nav class="section-nav">
-            <a class="section-nav-link" href=""> HOME </a>
+            <a class="section-nav-link" href="index.html"> HOME </a>
             <p class="section-nav-link"> / </p>
-            <a class="section-nav-link" href=""> MEN </a>
+            <a class="section-nav-link" href="catalog.html"> MEN </a>
             <p class="section-nav-link"> / </p>
             <a class="section-nav-link-action" href="">NEW ARRIVALS</a>
         </nav>
     </div>
-   
     <div class="item-catalog-box">
         <div class="filtration">
             <div class="filter-action">
@@ -55,12 +77,9 @@
                         <img src="img/filter-hover.png" alt="">
                     </div>
                     <div class="filter-menu-category menu-category">
-                        <div class="filter-open-button">
-                            <img src="img/filter-menu-restangle.png" alt="">
-                            <p class="filter-menu-open-heading filter-menu-open-heading-1">CATEGORY</p>
-                        </div>
-                        <div class="filter-menu-open-list category-list">
-                            <a class="filter-links" href="">Accessories</a>
+                        <details>
+                        <summary class="filter-open-button filter-menu-open-heading filter-menu-open-heading-1"><img class="filter-menu-restangle" src="img/filter-menu-restangle.png" alt="">CATEGORY</summary>
+                            <a class="filter-links filter-links-top" href="">Accessories</a>
                             <a class="filter-links" href="">Bags</a>
                             <a class="filter-links" href="">Denim</a>
                             <a class="filter-links" href="">Hoodies & Sweatshirts</a>
@@ -71,45 +90,34 @@
                             <a class="filter-links" href="">Sweaters & Knits</a>
                             <a class="filter-links" href="">T-Shirts</a>
                             <a class="filter-links" href="">Tanks</a>
-                        </div>
-                        <div class="filter-menu-category menu-brand">
-                            <div class="filter-open-button">
-                                <img src="img/filter-menu-restangle.png" alt="">
-                                <p class="filter-menu-open-heading filter-menu-open-heading-2">BRAND</p>
-                            </div>
-                            <div class="filter-menu-open-list brand-list">
-                                <a class="filter-links" href="">Accessories</a>
-                                <a class="filter-links" href="">Bags</a>
-                                <a class="filter-links" href="">Denim</a>
-                                <a class="filter-links" href="">Hoodies & Sweatshirts</a>
-                                <a class="filter-links" href="">Jackets & Coats</a>
-                                <a class="filter-links" href="">Polos</a>
-                                <a class="filter-links" href="">Shirts</a>
-                                <a class="filter-links" href="">Shoes</a>
-                                <a class="filter-links" href="">Sweaters & Knits</a>
-                                <a class="filter-links" href="">T-Shirts</a>
-                                <a class="filter-links" href="">Tanks</a>
-                            </div>
-                            <div class="filter-menu-category menu-designer">
-                                <div class="filter-open-button">
-                                    <img src="img/filter-menu-restangle.png" alt="">
-                                    <p class="filter-menu-open-heading filter-menu-open-heading-3">DESIGNER</p>
-                                </div>
-                                <div class="filter-menu-open-list designer-list">
-                                    <a class="filter-links" href="">Accessories</a>
-                                    <a class="filter-links" href="">Bags</a>
-                                    <a class="filter-links" href="">Denim</a>
-                                    <a class="filter-links" href="">Hoodies & Sweatshirts</a>
-                                    <a class="filter-links" href="">Jackets & Coats</a>
-                                    <a class="filter-links" href="">Polos</a>
-                                    <a class="filter-links" href="">Shirts</a>
-                                    <a class="filter-links" href="">Shoes</a>
-                                    <a class="filter-links" href="">Sweaters & Knits</a>
-                                    <a class="filter-links" href="">T-Shirts</a>
-                                    <a class="filter-links" href="">Tanks</a>
-                                </div>
-                            </div>
-                        </div>
+                        </details>
+                        <details>
+                        <summary class="filter-open-button filter-menu-open-heading filter-menu-open-heading-1"><img class="filter-menu-restangle" src="img/filter-menu-restangle.png" alt="">BRAND</summary>
+                            <a class="filter-links filter-links-top" href="">Accessories</a>
+                            <a class="filter-links" href="">Bags</a>
+                            <a class="filter-links" href="">Denim</a>
+                            <a class="filter-links" href="">Hoodies & Sweatshirts</a>
+                            <a class="filter-links" href="">Jackets & Coats</a>
+                            <a class="filter-links" href="">Polos</a>
+                            <a class="filter-links" href="">Shirts</a>
+                            <a class="filter-links" href="">Shoes</a>
+                            <a class="filter-links" href="">Sweaters & Knits</a>                                <a class="filter-links" href="">T-Shirts</a>
+                            <a class="filter-links" href="">Tanks</a>
+                        </details>
+                        <details>
+                        <summary class="filter-open-button filter-menu-open-heading filter-menu-open-heading-1"><img class="filter-menu-restangle" src="img/filter-menu-restangle.png" alt="">DESIGNER</summary>
+                            <a class="filter-links filter-links-top" href="">Accessories</a>
+                            <a class="filter-links" href="">Bags</a>
+                            <a class="filter-links" href="">Denim</a>
+                            <a class="filter-links" href="">Hoodies & Sweatshirts</a>
+                            <a class="filter-links" href="">Jackets & Coats</a>
+                            <a class="filter-links" href="">Polos</a>
+                            <a class="filter-links" href="">Shirts</a>
+                             <a class="filter-links" href="">Shoes</a>
+                            <a class="filter-links" href="">Sweaters & Knits</a>
+                            <a class="filter-links" href="">T-Shirts</a>
+                            <a class="filter-links" href="">Tanks</a>
+                        </details>
                     </div>
                 </div>
             </div>
@@ -165,82 +173,154 @@
             </div>
         </div>
         <div class="item-catalog-box-top">
-            <a href="" class="card">
-                <img src="img/item-card-1.jpg" alt="">
+            <div class="card">
+                <a href="product.html" class="card-hover">
+                    <div class="card-button">
+                        <img src="img/basket-ic.svg" alt="">
+                        <object data="" type="">
+                            <a href="cart.html" class="card-button-text">Add to Cart</a>
+                        </object>
+                    </div>
+                </a>
+            <img src="img/item-card-1.jpg" alt="">
                 <div class="card-bottom">
                     <p class="card-heading">ELLERY X M'O CAPSULE</p>
                     <p class="items-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                     <p class="price">$52.00</p>
                 </div>
-            </a>
-            <a href="" class="card">
-                <img src="img/item-card-2.jpg" alt="">
+            </div>
+            <div class="card">
+                <a href="product.html" class="card-hover">
+                    <div class="card-button">
+                        <img src="img/basket-ic.svg" alt="">
+                        <object data="" type="">
+                            <a href="cart.html" class="card-button-text">Add to Cart</a>
+                        </object>
+                    </div>
+                </a>
+            <img src="img/item-card-2.jpg" alt="">
                 <div class="card-bottom">
                     <p class="card-heading">ELLERY X M'O CAPSULE</p>
                     <p class="items-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                     <p class="price">$52.00</p>
                 </div>
-            </a>
-            <a href="" class="card">
-                <img src="img/item-card-3.jpg" alt="">
+            </div>
+            <div class="card">
+                <a href="product.html" class="card-hover">
+                    <div class="card-button">
+                        <img src="img/basket-ic.svg" alt="">
+                        <object data="" type="">
+                            <a href="cart.html" class="card-button-text">Add to Cart</a>
+                        </object>
+                    </div>
+                </a>
+            <img src="img/item-card-3.jpg" alt="">
                 <div class="card-bottom">
                     <p class="card-heading">ELLERY X M'O CAPSULE</p>
                     <p class="items-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                     <p class="price">$52.00</p>
                 </div>
-            </a>
+            </div>
         </div>
         <div class="item-catalog-box-middle">
-            <a href="" class="card">
-                <img src="img/item-card-4.jpg" alt="">
+            <div class="card">
+                <a href="product.html" class="card-hover">
+                    <div class="card-button">
+                        <img src="img/basket-ic.svg" alt="">
+                        <object data="" type="">
+                            <a href="cart.html" class="card-button-text">Add to Cart</a>
+                        </object>
+                    </div>
+                </a>
+            <img src="img/item-card-4.jpg" alt="">
                 <div class="card-bottom">
                     <p class="card-heading">ELLERY X M'O CAPSULE</p>
                     <p class="items-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                     <p class="price">$52.00</p>
                 </div>
-            </a>
-            <a href="" class="card">
-                <img src="img/item-card-5.jpg" alt="">
+            </div>
+            <div class="card">
+                <a href="product.html" class="card-hover">
+                    <div class="card-button">
+                        <img src="img/basket-ic.svg" alt="">
+                        <object data="" type="">
+                            <a href="cart.html" class="card-button-text">Add to Cart</a>
+                        </object>
+                    </div>
+                </a>
+            <img src="img/item-card-5.jpg" alt="">
                 <div class="card-bottom">
                     <p class="card-heading">ELLERY X M'O CAPSULE</p>
                     <p class="items-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                     <p class="price">$52.00</p>
                 </div>
-            </a>
-            <a href="" class="card">
-                <img src="img/item-card-6.jpg" alt="">
+            </div>
+            <div class="card">
+                <a href="product.html" class="card-hover">
+                    <div class="card-button">
+                        <img src="img/basket-ic.svg" alt="">
+                        <object data="" type="">
+                            <a href="cart.html" class="card-button-text">Add to Cart</a>
+                        </object>
+                    </div>
+                </a>
+            <img src="img/item-card-6.jpg" alt="">
                 <div class="card-bottom">
                     <p class="card-heading">ELLERY X M'O CAPSULE</p>
                     <p class="items-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                     <p class="price">$52.00</p>
                 </div>
-            </a>
+            </div>
         </div>
         <div class="item-catalog-box-bottom">
-            <a href="" class="card">
-                <img src="img/item-card-7.jpg" alt="">
+            <div class="card">
+                <a href="product.html" class="card-hover">
+                    <div class="card-button">
+                        <img src="img/basket-ic.svg" alt="">
+                        <object data="" type="">
+                            <a href="cart.html" class="card-button-text">Add to Cart</a>
+                        </object>
+                    </div>
+                </a>
+            <img src="img/item-card-7.jpg" alt="">
                 <div class="card-bottom">
                     <p class="card-heading">ELLERY X M'O CAPSULE</p>
                     <p class="items-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                     <p class="price">$52.00</p>
                 </div>
-            </a>
-            <a href="" class="card">
-                <img src="img/item-card-8.jpg" alt="">
+            </div>
+            <div class="card">
+                <a href="product.html" class="card-hover">
+                    <div class="card-button">
+                        <img src="img/basket-ic.svg" alt="">
+                        <object data="" type="">
+                            <a href="cart.html" class="card-button-text">Add to Cart</a>
+                        </object>
+                    </div>
+                </a>
+            <img src="img/item-card-8.jpg" alt="">
                 <div class="card-bottom">
                     <p class="card-heading">ELLERY X M'O CAPSULE</p>
                     <p class="items-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                     <p class="price">$52.00</p>
                 </div>
-            </a>
-            <a href="" class="card">
-                <img src="img/item-card-9.jpg" alt="">
+            </div>
+            <div class="card">
+                <a href="product.html" class="card-hover">
+                    <div class="card-button">
+                        <img src="img/basket-ic.svg" alt="">
+                        <object data="" type="">
+                            <a href="cart.html" class="card-button-text">Add to Cart</a>
+                        </object>
+                    </div>
+                </a>
+            <img src="img/item-card-9.jpg" alt="">
                 <div class="card-bottom">
                     <p class="card-heading">ELLERY X M'O CAPSULE</p>
                     <p class="items-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                     <p class="price">$52.00</p>
                 </div>
-            </a>
+            </div>
         </div>
         <nav class="catalog-nav">
             <a class="nav-arr-catlog" href=""><img  src="img/nav-arr-cat-1.svg" alt=""></a>

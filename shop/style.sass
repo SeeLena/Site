@@ -36,7 +36,7 @@ a
     background: #222222 
     display: flex 
     justify-content: space-between 
-    padding: 0 231px 
+    padding: 0 14% 
     align-items: center 
  
 
@@ -48,7 +48,6 @@ a
  
 
 .header-left  
-    width: 168px 
     display: flex 
     justify-content: space-between 
     align-items: center 
@@ -68,12 +67,18 @@ a
     background: #F1E4E6 
     display: flex 
     justify-content: center 
+    background-image: url(img/man-bck.png)
+    background-repeat: no-repeat
+    background-position: 15%
+    justify-content: flex-end
+    padding-right: 13%
  
 
 .top-content  
     display: flex 
     align-items: center 
-    padding-left: 200px 
+    padding-right: 20%
+    
  
 
 .top-restangle  
@@ -134,14 +139,14 @@ a
     display: flex 
     flex-direction: column 
     justify-content: center 
-    width: 1140px 
+    width: 90%
     margin-top: 96px 
  
 
 .category-gallery-top 
     display: flex 
     justify-content: space-between 
-    width: 1140px 
+    width: 100%
  
 
 .category-box  
@@ -151,6 +156,14 @@ a
     justify-content: center 
     align-items: center 
     transition: all 0.5s
+    width: 32%
+    padding-right: 3%
+
+.category-box:last-child
+    padding-right: 0
+
+.gallery-img
+    width: 100%
 
 .category-box:hover .gallery-img
     filter: brightness(30%)
@@ -209,6 +222,8 @@ a
     display: flex 
     justify-content: center 
     align-items: center 
+    &__catalog
+        padding-top: 0
  
 .items-heading  
     font-size: 30px 
@@ -217,10 +232,12 @@ a
  
 
 .items-text  
+    text-align: center
     font-size: 14px 
     line-height: 17px 
     color: #9F9F9F 
     margin-top: 6px 
+    margin-bottom: 50px
  
 
 .card-heading  
@@ -241,6 +258,8 @@ a
     background: #F8F8F8 
     padding: 25px 28px 18px 16px 
     box-sizing: unset
+    &_product-page
+        width: unset
  
 
 .card-box-top  
@@ -274,13 +293,17 @@ a
     padding: 14px 0 
  
 
-.card-hover  
+.card-hover 
     width: 360px 
     height: 420px 
     background: rgba(58, 56, 56, 0.86) 
     display: flex 
     align-items: center 
     justify-content: center 
+    &__product-page
+        width: 100%
+        height: 100%
+
  
 
 .card-button  
@@ -310,6 +333,7 @@ a
     position: relative 
     text-decoration: none 
     transition: all 0.5s
+    border: none
  
 
 .card:hover .card-hover  
@@ -330,7 +354,8 @@ a
     background: #222224 
     display: flex 
     align-items: center 
-    padding: 0 230px 
+    padding: 0 15%
+    justify-content: center
  
 
 .banner  
@@ -469,10 +494,14 @@ input  outline:none
 
 .section  
     display: flex 
-    justify-content: space-around 
+    justify-content: flex-start 
     height: 148px 
     background: #F8F3F4 
     align-items: center 
+    padding-left: 15%
+    &__breadcrumbs
+        justify-content: space-around
+        padding-left: 0
  
 
 .section-nav  
@@ -510,8 +539,8 @@ input  outline:none
 
 .filtration  
     display: flex 
-    justify-content: space-between 
-    width: 670px 
+    justify-content: space-around
+    width: 100%
     margin: 50px 0  60px 
     position: relative 
     z-index: 3 
@@ -656,7 +685,7 @@ label
     display: flex 
     justify-content: center 
     align-items: center 
-    display: grid
+    display: flex
  
 
 .item-catalog-box-top, .item-catalog-box-middle, .item-catalog-box-bottom  
@@ -672,6 +701,9 @@ label
     border: 1px solid #EBEBEB 
     margin-bottom: 100px 
     width: 280px
+    &__wrap
+        display: flex
+        justify-content: center
  
 
 .catalog-nav-button  
@@ -829,15 +861,22 @@ label
     width: 100% 
     align-items: center 
     justify-content: center 
+    padding: 2%
+    
  
 
 .box-product-wrap  
     margin-bottom: 125px 
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-column-gap: 15px
+    grid-row-gap: 15px
+    width: unset
  
 .shopping-cart
     display: flex
     justify-content: center
-    margin: 120px 0 100px
+    margin: 120px 0 0
     &__product-item
         display: flex
         filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13))
@@ -865,6 +904,8 @@ label
         display: flex
         flex-direction: column
         margin-left: 120px
+    &__product-wrapper
+        margin-bottom: 100px
         
             
 .product-discription
@@ -1010,3 +1051,259 @@ label
 
 .header-links-menu:hover .header-menu
     display: flex
+
+.card-box
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-template-rows: 1fr 1fr
+    grid-column-gap: 15px
+    grid-row-gap: 17px
+    &-wrap
+        display: flex
+        justify-content: center
+
+.registration
+    &__box
+        display: flex
+        justify-content: center
+        padding: 2%
+    &__text
+        font-size: 24px
+        line-height: 29px
+        color: #222222
+        padding-bottom: 22px
+        font-weight: 300
+    &__text-hover
+        padding-bottom: 16px    
+    &__text-hover:hover
+        color: $color-pink
+    &__text-box
+        max-width: 650px
+        padding: 34px 0 96px 4%
+    
+.fa-check-registration
+    padding-right: 22px
+
+.registration__form
+    padding: 34px 4% 96px 0
+    &_input
+        width: 360px
+        height: 44px
+        border: 1px solid #A4A4A4
+        font-weight: 300
+        font-size: 13px
+        line-height: 16px
+        color: #B1B1B1
+        margin-top: 20px
+        padding-left: 15px
+    &_heading
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: #222222
+    &_checkbox
+        padding: 34px 0
+        display: flex
+        width: 132px
+        justify-content: space-between
+        font-size: 11px
+        line-height: 13px
+        color: #A4A4A4
+    &_discription
+        font-size: 13px
+        line-height: 16px
+        color: #B1B1B1
+        max-width: 360px
+        padding-top: 15px
+    &_button
+        background: $color-pink
+        color: #FFFFFF
+        display: flex
+        align-items: center
+        justify-content: space-around
+        width: 167px
+    &_button:hover
+        background: #FFFFFF
+        color: $color-pink
+
+.card-product
+    width: auto
+
+
+@media (max-width: 576px)
+    .top-heading
+        font-size: 24px
+        line-height: 35px
+    .basket
+        display: none
+    .header-links-acc
+        display: none
+    .header
+        padding: 0
+    .top
+        height: 360px
+    .category-gallery
+        margin-top: 32px
+    .category-gallery-top
+        flex-wrap: wrap
+    .category-box
+        width: 100%
+        margin-top: 32px
+        padding-right: 0
+    .card-box
+        grid-template-columns: 1fr
+    .items
+        padding-top: 64px
+        padding-bottom: 40px
+    .banner-wrap
+        flex-wrap: wrap
+        height: 610px
+    .top
+        background-image: none
+        justify-content: center
+    .comm-text
+        font-size: 14px
+        width: 200px
+    .comments
+        width: 90%
+    .subscribe 
+        width: 80%
+    .subscribe-text
+        font-size: 10px
+    .footer-text
+        font-size: 10px
+    .box-product-wrap 
+        grid-template-columns: 1fr 
+    .shopping-cart__shipping
+        margin: 0 0 100px
+    .shopping-cart__button
+        margin-right: 10px
+        width: 155px
+        height: 37px
+    .shopping-cart__button-wrapper
+        justify-content: center
+    .section
+        justify-content: center
+        padding: 0
+    .registration__box
+        justify-content: unset
+    .registration__form
+        padding: 34px 0 0px
+    .registration__form_input
+        width: 250px
+    .subscribe-button-in
+        width: 110px
+    .registration__text
+        font-size: 17px
+    .registration__text-box
+        padding: 15px 4% 15px
+        width: 300px
+    .shopping-cart__button-text
+        padding: 10px 0
+        font-size: 12px
+    .shipping-form__input
+        width: 280px
+    .checkout-form
+        padding: 30px 15px
+    .shopping-cart__shipping
+        margin: 0 0 40px
+    .product-des-wrap
+        margin-bottom: 60px
+    .product-des
+        width: 100%
+    .product-des-collection
+        font-size: 11px
+    .product-collection-hr
+        width: 63px
+    .product-des-heading
+        font-size: 14px
+    .product-des-text
+        font-size: 10px
+        width: 235px
+        padding: 15px 0
+    .product-des-price
+        font-size: 14px
+        padding-bottom: 0px
+    .product-des-hr
+        width: 250px
+    .menu-chekbox
+        padding: 0
+
+@media (min-width: 577px) and (max-width: 768px)
+    .top
+        height: 360px
+        background-image: none
+        justify-content: center
+    .top-heading
+        font-size: 38px
+    .category-gallery
+        margin-top: 20px
+    .card-box
+        grid-template-columns: 1fr 1fr
+    .box-product-wrap 
+        grid-template-columns: 1fr 1fr
+    .shopping-cart__button-wrapper
+        justify-content: space-around
+        margin: 0 auto
+        width: unset
+    .shopping-cart__shipping
+        flex-direction: row
+        margin: 0 2% 140px
+        padding: 2%
+    .shipping-form
+        margin-right: 15px
+    .checkout-form
+        margin-top: 0
+        padding 30px 
+    .registration__text-box
+        padding: 34px 4% 96px
+    
+@media (max-width: 900px) 
+    .reviews
+        flex-wrap: wrap
+
+@media (max-width: 768px)
+    .filter-heading
+        display: none
+    .filtration
+        justify-content: space-around
+        margin: 26px 0 40px
+    .filter-open-menu
+        left: 0
+    .section
+        flex-wrap: wrap
+    .product-des
+        top: 0
+    .registration__box
+        flex-wrap: wrap
+
+@media (max-width: 1200px)    
+    .card-product_last-child
+        display: none
+    .shopping-cart
+        flex-wrap: wrap
+    .shopping-cart__shipping
+        margin: 0 0 100px
+
+@media (min-width: 768px) and (max-width: 1200px) 
+    .top
+        background-image: none
+        justify-content: center
+    .top-content
+        padding: unset
+    .card-box
+        grid-template-columns: 1fr 1fr
+    .banner-wrap
+        flex-wrap: wrap
+        height: 610px
+
+
+@media (max-width: 1600px)
+    .top-content
+        padding-right: 4%
+    .reviews
+        background-size: unset
+
+@media (min-width: 1400px)
+    .category-gallery
+        width: 1140px

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <script src="https://kit.fontawesome.com/433ce57c72.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header-container">
+        <div class="header">
+            <nav class="header-right">
+                <a class="header-links" href="index.html"><img src="img/logo.svg" alt=""></a>
+                <a class="header-links" href="#"><img src="img/search-ic.svg" alt=""></a>
+            </nav>
+            <nav class="header-left">
+            <div class="header-links-menu">
+                <a class="header-links" href="#"><img src="img/menu-ic.svg" alt=""></a>
+                <nav class="header-menu">
+                    <i class="fas fa-times header-menu__cross"></i>
+                    <p class="header-menu__heading">MENU</p>
+                    <p class="header-menu__links-heading">MAN</p>
+                        <a href="catalog.html" class="header-menu__links">Accessories</a>
+                        <a href="catalog.html" class="header-menu__links">Bags</a>
+                        <a href="catalog.html" class="header-menu__links">Denim</a>
+                        <a href="catalog.html" class="header-menu__links">T-Shirts</a>
+                    <p class="header-menu__links-heading">WOMAN</p>
+                        <a href="catalog.html" class="header-menu__links">Accessories</a>
+                        <a href="catalog.html" class="header-menu__links">Jackets & Coats</a>
+                        <a href="catalog.html" class="header-menu__links">Polos</a>
+                        <a href="catalog.html" class="header-menu__links">T-Shirts</a>
+                        <a href="catalog.html" class="header-menu__links">Shirts</a>
+                    <p class="header-menu__links-heading">KIDS</p>
+                        <a href="catalog.html" class="header-menu__links">Accessories</a>
+                        <a href="catalog.html" class="header-menu__links">Jackets & Coats</a>
+                        <a href="catalog.html" class="header-menu__links">Polos</a>
+                        <a href="catalog.html" class="header-menu__links">T-Shirts</a>
+                        <a href="catalog.html" class="header-menu__links">Shirts</a>
+                        <a href="catalog.html" class="header-menu__links">Bags</a>
+                </nav>
+            </div>
+                <a class="header-links header-links-acc" href="registration.html"><img src="img/account-ic.svg" alt=""></a>
+                <a href="cart.html" class="wrapper-basket"> 
+                     <div class="basket">
+                             <img src="img/basket-ic.svg" alt=""> 
+                         <div class="null">
+                            <span>0</span>
+                         </div>
+                     </div>
+                </a>
+            </nav>
+        </div>
+    </div>
+    <div class="section">
+        <h3 class="section-heading">REGISTRATION</h3>
+    </div>
+    <div class="registration__box">
+        <form action="#" class="registration__form">
+            <p class="registration__form_heading">Your Name</p>
+            <input type="text" name="first_name" placeholder="First Name" class="registration__form_input"><br>
+            <input type="text" name="last_name" placeholder="Last Name" class="registration__form_input"><br>
+            <div class="registration__form_checkbox">
+                <input type="radio" id="male" name="gender"> Male
+                <input type="radio" id="female" name="gender"> Female
+            </div>
+            <p class="registration__form_heading">Login details</p>
+            <input type="email" name="email" placeholder="Email" class="registration__form_input"><br>
+            <input type="password" name="password" placeholder="Password" class="registration__form_input"><br>
+            <p class="registration__form_discription">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+            <button type="submit" class="button registration__form_button">JOIN NOW <i class="fas fa-arrow-right"></i></button>
+        </form>
+        <div class="registration__text-box">
+            <p class="registration__text">LOYALTY HAS ITS PERKS</p>
+            <p class="registration__text">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
+            <p class="registration__text registration__text-hover"><i class="fas fa-check fa-check-registration"></i>15% off welcome offer</p>
+            <p class="registration__text registration__text-hover"><i class="fas fa-check fa-check-registration"></i>Free shipping, returns and exchanges on all orders</p>
+            <p class="registration__text registration__text-hover"><i class="fas fa-check fa-check-registration"></i>$10 off a purchase on your birthday</p>
+            <p class="registration__text registration__text-hover"><i class="fas fa-check fa-check-registration"></i>Early access to products</p>
+            <p class="registration__text registration__text-hover"><i class="fas fa-check fa-check-registration"></i>Exclusive offers & rewards</p>
+        </div>
+    </div>
+    <div class="reviews">
+        <figure class="comments">
+            <img src="img/review-ic.png" alt="">
+            <p class="comm-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
+        </figure >
+        <div class="subscribe">
+            <p class="subscribe-text"> <span class="subscribe-heading">SUBSCRIBE</span> <br>
+             FOR OUR NEWLETTER AND PROMOTION</p>
+             <form action="#" class="subscribe-button">
+                 <input class="subscribe-button-in" type="email" placeholder="Enter Your Email">
+                 <button class="subscribe-submit" type="submit">Subscribe</button>
+             </form>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="footer-text">© 2021  Brand  All Rights Reserved.</p>
+         <nav class="footer-ic-wrapper">
+             <a class="footer-ic" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a class="footer-ic" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a class="footer-ic" href="https://www.pinterest.com/" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+              <a class="footer-ic" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+         </nav>
+    </div>
+</body>
+</html>
